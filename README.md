@@ -14,6 +14,17 @@ pnpm dev
 bun dev
 ```
 
+run local expose port 3000
+```bash
+$ npm run dev -- -H 0.0.0.0 -p 3000
+
+// Check Ip
+ifconfig | grep inet
+
+// 192.168.18.27:3000
+```
+
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
